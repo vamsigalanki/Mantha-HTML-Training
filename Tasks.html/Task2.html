@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Sections and Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .section {
+            flex: 1 1 calc(50% - 20px);
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align:center; padding: 20px;">Webpage with Four Sections and Images</h1>
+    <div class="container">
+        <div class="section">
+            <h2>Section 1</h2>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.kRum5fO6epUEWAKmoEAi0AHaJQ&pid=Api&P=0&h=180/300x200"
+                alt="Placeholder Image 1">
+            <p>Image description for Section 1.</p>
+        </div>
+        <div class="section">
+            <h2>Section 2</h2>
+            <img src="https://tse3.mm.bing.net/th?id=OIP.nyau5FUWYjJFBrIzpq3SdgHaE8&pid=Api&P=0&h=180/300x200"
+                alt="Placeholder Image 2">
+            <p>Image description for Section 2.</p>
+        </div>
+        <div class="section">
+            <h2>Section 3</h2>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.IF0oXOJTm-ZcWNcfhreONQHaFj&pid=Api&P=0&h=180/300x200"
+                alt="Placeholder Image 3">
+            <p>Image description for Section 3.</p>
+        </div>
+        <div class="section">
+            <h2>Section 4</h2>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.MlPpIM48zDZAOyOW5PM7AgHaFj&pid=Api&P=0&h=180/300x200"
+                alt="Placeholder Image 4">
+            <p>Image description for Section 4.</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cricket Score Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #336699;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px;
+        }
+        .team {
+            text-align: center;
+        }
+        .team img {
+            width: 100px;
+            height: auto;
+        }
+        .scores {
+            margin: 20px auto;
+            width: 80%;
+            background-color: white;
+            border: 1px solid #180505;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .scores table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .scores th, .scores td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #101810;
+        }
+        .scores th {
+            background-color: #1b9597;
+        }
+       
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Cricket Score Dashboard</h1>
+</header>
+
+<div class="container">
+    <div class="team">
+        <h2>MI</h2>
+        <img src="https://tse1.mm.bing.net/th?id=OIP.SAbuB4_6N864FnLyh6L-2QHaEq&pid=Api&rs=1&c=1&qlt=95&w=161&h=101" alt="Team A Logo">
+        <p>Score: 250/6</p>
+    </div>
+    <div class="team">
+        <h2>CSK</h2>
+        <img src="https://tse1.mm.bing.net/th?id=OIP.bxa9bgjGluF7Gp-A7W-JsAHaFP&pid=Api&rs=1&c=1&qlt=95&w=152&h=107" alt="Team B Logo">
+        <p>Score: 240/8</p>
+    </div>
+    <div class="team">
+        <h2>RCB</h2>
+        <img src="https://tse1.mm.bing.net/th?id=OIP.-49ZD54br8sUs3m5Kw_W3AHaHa&pid=Api&rs=1&c=1&qlt=95&w=92&h=92" alt="Team B Logo">
+        <p>Score: 222/10</p>
+    </div>
+</div>
+
+<div class="scores">
+    <h2>Player Scores</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Player Name</th>
+                <th>Team</th>
+                <th>Runs</th>
+                <th>Balls</th>
+                <th>Strike Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rohit Sharma</td>
+                <td>MI</td>
+                <td>59</td>
+                <td>40</td>
+                <td>125.0</td>
+            </tr>
+            <tr>
+                <td>Virak kohli</td>
+                <td>MI</td>
+                <td>70</td>
+                <td>50</td>
+                <td>156.67</td>
+            </tr>
+            <tr>
+                <td>MS Dhoni</td>
+                <td>CSK</td>
+                <td>85</td>
+                <td>35</td>
+                <td>188.57</td>
+            </tr>
+            <tr>
+                <td>H Pandya</td>
+                <td>CSK</td>
+                <td>55</td>
+                <td>45</td>
+                <td>122.22</td>
+            </tr>
+            <tr>
+                <td>KL Rahul</td>
+                <td>RCB</td>
+                <td>80</td>
+                <td>55</td>
+                <td>180.22</td>
+            </tr>
+            <tr>
+                <td>Rishab</td>
+                <td>RCB</td>
+                <td>90</td>
+                <td>58</td>
+                <td>198.22</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
