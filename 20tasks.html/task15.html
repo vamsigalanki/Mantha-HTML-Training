@@ -1,0 +1,122 @@
+Create a website inside it placed some images .
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website with Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #bd0d74;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #111;
+        }
+        main {
+            padding: 20px;
+            margin-top: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> TECH SOLUTIONS</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to the homepage. This is where you can find the latest updates and news.</p>
+            <div class="image-container">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.MK-fp1FOdkWISlJMQAY5hgHaDk&pid=Api&P=0&h=180" alt="Placeholder Image 1">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.BO37CDv-rqDnl5LE1Ez0AwHaEK&pid=Api&P=0&h=180" alt="Placeholder Image 2">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.RdXvQc4oErYO51UvV5eUrwHaEK&pid=Api&P=0&h=180" alt="Placeholder Image 3">
+            </div>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>Learn more about our company and what we do.</p>
+            <div class="image-container">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.zz_jUGRmat3dhwtlyZMF_AHaD_&pid=Api&P=0&h=180" alt="Placeholder Image 4">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.OatK0hgipKLLjD5LO3AUwwHaHa&pid=Api&P=0&h=180" alt="Placeholder Image 5">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.gksOxdTXUt7DWe7Nmc0tHgHaE7&pid=Api&P=0&h=180" alt="Placeholder Image 6">
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Get in touch with us through our contact form.</p>
+            <div class="image-container">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.2a9KRLZbe13jpmAtLiRPwgHaDc&pid=Api&P=0&h=180" alt="Placeholder Image 7">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.LfSVuzM5xP1ims3rJYYhaQHaFj&pid=Api&P=0&h=180" alt="Placeholder Image 8">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.A_f7nhwsPd7ixxBfcIssFwHaE8&pid=Api&P=0&h=180" alt="Placeholder Image 9">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tech Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+

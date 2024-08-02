@@ -1,0 +1,107 @@
+Create a web page using scroll margin  properties.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Cricketers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            margin-top: 60px; /* Make space for the fixed header */
+            padding: 20px;
+        }
+        section {
+            height: 100vh;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        .scroll-margin {
+            scroll-margin-top: 60px; /* Adjust for the height of the fixed header */
+        }
+        .cricketer {
+            margin-bottom: 20px;
+        }
+        .cricketer img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sachin">Sachin Tendulkar</a></li>
+                <li><a href="#virat">Virat Kohli</a></li>
+                <li><a href="#dhoni">MS Dhoni</a></li>
+                <li><a href="#rohit">Rohit Sharma</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sachin" class="scroll-margin">
+            <h2>Sachin Tendulkar</h2>
+            <div class="cricketer">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.2uv4_f9adtMjV6hbQ17-uwHaFj&pid=Api&P=0&h=180" alt="Sachin Tendulkar">
+                <p>Sachin Tendulkar is widely regarded as one of the greatest batsmen in the history of cricket. He holds numerous records and is the only player to have scored one hundred international centuries.</p>
+            </div>
+        </section>
+        <section id="virat" class="scroll-margin">
+            <h2>Virat Kohli</h2>
+            <div class="cricketer">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.f20JfFJJ5GQkhKqhVE7mawHaEK&pid=Api&P=0&h=180" alt="Virat Kohli">
+                <p>Virat Kohli is known for his aggressive batting style and consistent performance. He has been one of the leading run-scorers in modern cricket and has numerous records to his name.</p>
+            </div>
+        </section>
+        <section id="dhoni" class="scroll-margin">
+            <h2>MS Dhoni</h2>
+            <div class="cricketer">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.4z2feTp_Mw25d-lmn1wMdQHaJI&pid=Api&rs=1&c=1&qlt=95&w=85&h=105" alt="MS Dhoni">
+                <p>MS Dhoni is renowned for his calm and composed demeanor on the field. He is one of the most successful captains in cricket history, having led India to numerous victories, including the ICC World Cup in 2011.</p>
+            </div>
+        </section>
+        <section id="rohit" class="scroll-margin">
+            <h2>Rohit Sharma</h2>
+            <div class="cricketer">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.7FrKwjfirC933Li08mghyQAAAA&pid=Api&P=0&h=180" alt="Rohit Sharma">
+                <p>Rohit Sharma is known for his ability to score big hundreds and double centuries in limited-overs cricket. He is the only player to have scored three double centuries in ODIs.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Indian Cricketers</p>
+    </footer>
+</body>
+</html>

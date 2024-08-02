@@ -1,0 +1,93 @@
+Create a web page using overflow properties.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Using Overflow Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #8ab80c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .scroll-box {
+            width: 100%;
+            height: 200px;
+            border: 1px solid #ddd;
+            overflow-y: scroll; 
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .hidden-box {
+            width: 100%;
+            height: 200px;
+            border: 1px solid #ddd;
+            overflow: hidden; 
+            padding: 15px;
+            background-color: #fff;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .auto-box {
+            width: 100%;
+            height: 200px;
+            border: 1px solid #ddd;
+            overflow: auto; 
+            padding: 15px;
+            background-color: #fff;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Web Page</h1>
+    </header>
+    <div class="container">
+        <div class="scroll-box">
+            <h2>Scroll Box</h2>
+            <p>This box has a fixed height and uses overflow-y: scroll to add a vertical scrollbar when the content overflows.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget risus sed lorem ullamcorper bibendum. Nam ut dui at tortor sodales lacinia.</p>
+            <p>Vivamus consectetur, lacus a luctus posuere, ligula magna posuere justo, ut malesuada turpis enim et magna.</p>
+            <p>Sed ut urna vel libero ultrices tincidunt. Nulla facilisi. Vivamus lacinia vehicula diam, at convallis erat aliquam at.</p>
+        </div>
+        <div class="hidden-box">
+            <h2>Hidden Box</h2>
+            <p>This box has a fixed height and uses overflow: hidden to hide any content that overflows.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget risus sed lorem ullamcorper bibendum. Nam ut dui at tortor sodales lacinia.</p>
+            <p>Vivamus consectetur, lacus a luctus posuere, ligula magna posuere justo, ut malesuada turpis enim et magna.</p>
+            <p>Sed ut urna vel libero ultrices tincidunt. Nulla facilisi. Vivamus lacinia vehicula diam, at convallis erat aliquam at.</p>
+        </div>
+        <div class="auto-box">
+            <h2>Auto Box</h2>
+            <p>This box has a fixed height and uses overflow: auto to add scrollbars when necessary.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget risus sed lorem ullamcorper bibendum. Nam ut dui at tortor sodales lacinia.</p>
+            <p>Vivamus consectetur, lacus a luctus posuere, ligula magna posuere justo, ut malesuada turpis enim et magna.</p>
+            <p>Sed ut urna vel libero ultrices tincidunt. Nulla facilisi. Vivamus lacinia vehicula diam, at convallis erat aliquam at.</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 My Web Page. All rights reserved.
+    </footer>
+</body>
+</html>
